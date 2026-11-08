@@ -1,2 +1,2 @@
 # hjemmeside
-Hjemmeside
+Hjemmeside Verifisert sync
