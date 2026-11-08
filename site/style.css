@@ -1,0 +1,23 @@
+body {
+  margin: 8px;
+  background: #fff url("images/wall.jpg") repeat;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.version { text-align: right; font-size: 12px; }
+.masthead { position: relative; margin: 16px 0; min-height: 102px; }
+.signature { max-width: calc(100% - 134px); height: auto; vertical-align: middle; }
+.bear { position: absolute; top: 0; }
+.bear-left { left: 0; }
+.bear-right { right: 0; }
+h2 { font-size: 24px; margin: 0.83em 0; }
+.section-image { width: 300px; max-width: 100%; height: auto; border: 0; vertical-align: middle; }
+.link-rows { margin: 1em 0; line-height: normal; }
+.link-row { overflow-wrap: anywhere; }
+.widgets { margin: 1em 0 2em; }
+iframe { border: 0; max-width: 100%; }
+.weather { max-width: 100%; height: auto; border: 0; }
+.timeline { display: block; }

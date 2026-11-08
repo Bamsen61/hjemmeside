@@ -1,0 +1,388 @@
+{
+  "sections": [
+    {
+      "rows": [
+        [
+          {
+            "text": "Telia TV",
+            "url": "https://www.teliaplay.no/epg/tv-guide"
+          },
+          {
+            "text": "WeMail",
+            "url": "https://app.wemail.no/"
+          },
+          {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/home.php?ref=home&sk=h_chr"
+          },
+          {
+            "text": "Messenger",
+            "url": "https://www.facebook.com/messages/e2ee/t/7609835355795657"
+          },
+          {
+            "text": "Feedly",
+            "url": "https://feedly.com/i/collection/content/user/46e141fd-16b1-40aa-ba9d-d0a9a944d9a6/category/Romerike"
+          },
+          {
+            "text": "ICE",
+            "url": "https://minside.ice.no/"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Vivicta",
+      "url": "https://vivicta.sharepoint.com/sites/hub/",
+      "image": "images/Vivicta.png",
+      "rows": [
+        [
+          {
+            "text": "GIT",
+            "url": "https://vivicta.ghe.com/"
+          },
+          {
+            "text": "(gammel GIT)",
+            "url": "https://git.evry.cloud/Adaxes/Adaxes-Europe"
+          },
+          {
+            "text": "Viva",
+            "url": "https://engage.cloud.microsoft/main/org/tchsvc.com/feed"
+          },
+          {
+            "text": "Vivicta Mail",
+            "url": "https://outlook.office365.com/mail/inbox"
+          }
+        ],
+        [
+          {
+            "text": "(my)",
+            "url": "https://tieto.service-now.com/tsc"
+          },
+          {
+            "text": "Service Now",
+            "url": "https://tieto.service-now.com/nav_to.do?uri=%2Fhome.do%3F",
+            "separator": " "
+          },
+          {
+            "text": "SM9",
+            "url": "https://sm.services.tietoevry.com/servicedesk/index.do"
+          },
+          {
+            "text": "My Time",
+            "url": "https://mytime.tietoevry.com/"
+          },
+          {
+            "text": "Lønnsslipp",
+            "url": "https://portals.integrator.tietoevry.com/payslips/get"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.com/",
+      "rows": [
+        [
+          {
+            "text": "Maps",
+            "url": "https://www.google.com/maps/"
+          },
+          {
+            "text": "Keep",
+            "url": "https://keep.google.com/"
+          },
+          {
+            "text": "SMS",
+            "url": "https://messages.android.com/"
+          },
+          {
+            "text": "Bookmarks",
+            "url": "https://www.google.com/bookmarks/"
+          },
+          {
+            "text": "YouTube",
+            "url": "https://www.youtube.com/feed/subscriptions"
+          },
+          {
+            "text": "Mail",
+            "url": "https://mail.google.com/"
+          },
+          {
+            "text": "Kontakter",
+            "url": "https://contacts.google.com/"
+          },
+          {
+            "text": "Kalender",
+            "url": "https://calendar.google.com/"
+          }
+        ],
+        [
+          {
+            "text": "Translate",
+            "url": "http://translate.google.com/?hl=en&tab=yT#auto|no|"
+          },
+          {
+            "text": "Drive",
+            "url": "https://drive.google.com/"
+          },
+          {
+            "text": "Wallet",
+            "url": "https://wallet.google.com/manage/#transactions:"
+          },
+          {
+            "text": "Dashboard",
+            "url": "https://www.google.com/dashboard/?hl=en"
+          },
+          {
+            "text": "Android",
+            "url": "http://developer.android.com/index.html"
+          },
+          {
+            "text": "Play",
+            "url": "https://play.google.com/store/apps?hl=en"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Search",
+      "url": "http://www.google.no/",
+      "rows": [
+        [
+          {
+            "text": "Telefonkatalogen",
+            "url": "http://www.gulesider.no/tk/"
+          },
+          {
+            "text": "Ruter",
+            "url": "https://reise.ruter.no/"
+          },
+          {
+            "text": "VY",
+            "url": "https://www.vy.no/"
+          },
+          {
+            "text": "Wikipedia",
+            "url": "http://en.wikipedia.org/wiki/Main_Page"
+          },
+          {
+            "text": "IMDB",
+            "url": "https://www.imdb.com/"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Nyheter",
+      "rows": [
+        [
+          {
+            "text": "Romerikes Blad",
+            "url": "https://www.rb.no/"
+          },
+          {
+            "text": "Mitt Lillestrøm",
+            "url": "https://www.mittlillestrom.no/"
+          },
+          {
+            "text": "NRK",
+            "url": "https://nrk.no/"
+          }
+        ],
+        [
+          {
+            "text": "Forsidene",
+            "url": "http://www.forsidene.no/"
+          },
+          {
+            "text": "VG",
+            "url": "http://www.vg.no/"
+          },
+          {
+            "text": "Dagbladet",
+            "url": "http://www.dagbladet.no/"
+          },
+          {
+            "text": "Aftenposten",
+            "url": "http://www.aftenposten.no"
+          },
+          {
+            "text": "Nettavisen",
+            "url": "http://www.nettavisen.no/"
+          },
+          {
+            "text": "Digi",
+            "url": "http://www.digi.no/"
+          },
+          {
+            "text": "IT Avisen",
+            "url": "http://www.itavisen.no"
+          },
+          {
+            "text": "Forskning.no",
+            "url": "http://www.forskning.no"
+          }
+        ],
+        [
+          {
+            "text": "YR",
+            "url": "http://www.yr.no"
+          },
+          {
+            "text": "Oslo",
+            "url": "http://www.yr.no/sted/Norge/Oslo/Oslo/Oslo/time_for_time.html",
+            "separator": " "
+          },
+          {
+            "text": "Vung Tau",
+            "url": "http://www.yr.no/sted/Vietnam/Bà_Rịa-Vũng_Tàu/Vung_Tau/time_for_time.html",
+            "separator": " "
+          },
+          {
+            "text": "NRK Altid Nyheter",
+            "url": "http://nettradio.nrk.no/default.php?kanal=an"
+          },
+          {
+            "text": "NRK P1",
+            "url": "http://nettradio.nrk.no/default.php?kanal=p1"
+          },
+          {
+            "text": "Trafikkflyt",
+            "url": "http://www.trafikkflyt.no/"
+          }
+        ],
+        [
+          {
+            "text": "CNN",
+            "url": "http://www.cnn.com/"
+          },
+          {
+            "text": "Time",
+            "url": "http://www.time.com/"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Privat",
+      "rows": [
+        [
+          {
+            "text": "Storebrand",
+            "url": "https://bank.storebrand.no/netbank/"
+          },
+          {
+            "text": "DNB",
+            "url": "https://www.dnb.no/"
+          },
+          {
+            "text": "PayPal",
+            "url": "https://www.paypal.com/no/home"
+          }
+        ],
+        [
+          {
+            "text": "MyHeritage",
+            "url": "https://www.myheritage.no/site-family-tree-278393571/steien"
+          },
+          {
+            "text": "Amazon Reader",
+            "url": "https://read.amazon.com/"
+          },
+          {
+            "text": "WeMail",
+            "url": "https://mail.wemail.no/?_task=mail&_mbox=INBOX"
+          },
+          {
+            "text": "Telenor",
+            "url": "https://www.telenor.no/privat/minesider/logginnfelles.cms"
+          },
+          {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/home.php?ref=home&sk=h_chr"
+          },
+          {
+            "text": "X",
+            "url": "https://x.com/home"
+          },
+          {
+            "text": "Blue Sky",
+            "url": "https://bsky.app/"
+          },
+          {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/aproblemsquared/"
+          }
+        ],
+        [
+          {
+            "text": "Norsk Tipping",
+            "url": "https://www.norsk-tipping.no/"
+          },
+          {
+            "text": "Telia WiFi Router",
+            "url": "http://teliagateway.lan/gateway.lp#"
+          },
+          {
+            "text": "WhatsApp",
+            "url": "https://web.whatsapp.com/"
+          },
+          {
+            "text": "AppBrain",
+            "url": "http://www.appbrain.com/"
+          }
+        ],
+        [
+          {
+            "text": "Spotify Podcasts",
+            "url": "https://open.spotify.com/collection/podcasts"
+          },
+          {
+            "text": "NRK Radio",
+            "url": "https://radio.nrk.no/mittinnhold"
+          }
+        ],
+        [
+          {
+            "text": "Max",
+            "url": "https://play.max.com/home"
+          },
+          {
+            "text": "Disney+",
+            "url": "https://www.disneyplus.com/en-gb/home"
+          },
+          {
+            "text": "Netflix",
+            "url": "https://www.netflix.com/browse"
+          },
+          {
+            "text": "Amazon Prime Video",
+            "url": "https://www.primevideo.com/"
+          },
+          {
+            "text": "TV2 Play",
+            "url": "https://play.tv2.no/"
+          },
+          {
+            "text": "Telia TV",
+            "url": "https://teliaplay.no/tv-guide"
+          },
+          {
+            "text": "NRK TV",
+            "url": "https://tv.nrk.no/mittinnhold"
+          }
+        ],
+        [
+          {
+            "text": "Just Watch",
+            "url": "https://www.justwatch.com/no"
+          },
+          {
+            "text": "Netflix Codes",
+            "url": "https://www.netflix-codes.com/#Sci%20-%20Fi%20&%20Fantasy"
+          }
+        ]
+      ]
+    }
+  ]
+}
