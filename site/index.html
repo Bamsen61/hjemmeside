@@ -8,11 +8,26 @@
   <script src="app.js" defer></script>
 </head>
 <body>
+  <section id="login" class="login-panel" aria-labelledby="login-title">
+    <h1 id="login-title">Logg inn</h1>
+    <form id="login-form">
+      <label for="username">Brukernavn</label>
+      <input id="username" name="username" autocomplete="username" required autofocus>
+      <label for="password">Passord</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button id="login-submit" type="submit">Logg inn</button>
+      <p>Innloggingen huskes i denne nettleseren.</p>
+      <p id="login-error" role="alert"></p>
+    </form>
+  </section>
+  <noscript><p>Aktiver JavaScript for å logge inn og vise hjemmesiden.</p></noscript>
+  <div id="homepage" hidden>
+  <button id="logout" class="logout" type="button">Logg ut</button>
   <div id="version" class="version"></div>
   <header class="masthead">
-    <img class="bear bear-left" src="images/bamsemum.gif" width="67" height="102" alt="">
-    <img class="signature" src="images/mas.GIF" width="300" alt="Morten">
-    <img class="bear bear-right" src="images/bamsemum.gif" width="67" height="102" alt="">
+    <img class="bear bear-left" data-src="images/bamsemum.gif" width="67" height="102" alt="">
+    <img class="signature" data-src="images/mas.GIF" width="300" alt="Morten">
+    <img class="bear bear-right" data-src="images/bamsemum.gif" width="67" height="102" alt="">
   </header>
   <main>
     <div id="links" aria-label="Linksamling" aria-live="polite">
@@ -20,13 +35,14 @@
     </div>
     <noscript><p>Aktiver JavaScript for å vise linksamlingen.</p></noscript>
     <section class="widgets" aria-label="Klokke og vær">
-      <iframe title="Analog klokke for Oslo" src="https://free.timeanddate.com/clock/i6sa2qb0/n187/szw210/szh210/hoc000/hbw2/hfceee/cf100/hncccc/fan3/fdi76/mqc000/mql10/mqw4/mqd98/mhc000/mhl10/mhw4/mhd98/mmc000/mml10/mmw1/mmd98" width="210" height="210"></iframe>
+      <iframe title="Analog klokke for Oslo" data-src="https://free.timeanddate.com/clock/i6sa2qb0/n187/szw210/szh210/hoc000/hbw2/hfceee/cf100/hncccc/fan3/fdi76/mqc000/mql10/mqw4/mqd98/mhc000/mhl10/mhw4/mhd98/mmc000/mml10/mmw1/mmd98" width="210" height="210"></iframe>
       <br>
-      <iframe title="Digital klokke for Oslo" src="https://free.timeanddate.com/clock/i6sa2qb0/n187/tlno10/fs20/tct/pct/ftb/th1" width="83" height="25"></iframe>
+      <iframe title="Digital klokke for Oslo" data-src="https://free.timeanddate.com/clock/i6sa2qb0/n187/tlno10/fs20/tct/pct/ftb/th1" width="83" height="25"></iframe>
       <br><br>
-      <a href="https://www.yr.no/nb/detaljer/graf/1-73669/Norge/Viken/Lillestr%C3%B8m/Lillestr%C3%B8m"><img class="weather" src="https://www.yr.no/nb/innhold/1-73669/meteogram.svg" alt="Værvarsel for Lillestrøm fra Yr"></a>
+      <a href="https://www.yr.no/nb/detaljer/graf/1-73669/Norge/Viken/Lillestr%C3%B8m/Lillestr%C3%B8m"><img class="weather" data-src="https://www.yr.no/nb/innhold/1-73669/meteogram.svg" alt="Værvarsel for Lillestrøm fra Yr"></a>
     </section>
-    <iframe class="timeline" title="Tidslinje" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1YClQcl027kAnmqvLa4ohnXEFguBgmCDh9L1JYg1Ehts&amp;font=Default&amp;lang=en&amp;start_at_slide=191&amp;initial_zoom=5&amp;height=400" width="100%" height="400" allowfullscreen loading="lazy"></iframe>
+    <iframe class="timeline" title="Tidslinje" data-src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1YClQcl027kAnmqvLa4ohnXEFguBgmCDh9L1JYg1Ehts&amp;font=Default&amp;lang=en&amp;start_at_slide=191&amp;initial_zoom=5&amp;height=400" width="100%" height="400" allowfullscreen loading="lazy"></iframe>
   </main>
+  </div>
 </body>
 </html>

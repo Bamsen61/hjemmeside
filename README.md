@@ -1,6 +1,8 @@
 # Hjemmeside
 
-Statisk startside, appversjon 1. Nettsidefilene ligger i `site/`.
+Statisk startside, appversjon 2. Nettsidefilene ligger i `site/`.
+
+Forsiden har JavaScript-login som huskes i nettleseren. Brukernavn og passord kontrolleres mot en SHA-256-hash. Dette er en enkel sperre; statiske filer er fortsatt offentlig tilgjengelige. Se prosjektdokumentasjonen for detaljer.
 
 ## Endre en link
 

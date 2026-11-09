@@ -1,7 +1,69 @@
 "use strict";
 
-const APP_VERSION = 1;
+const APP_VERSION = 2;
 document.getElementById("version").textContent = `Versjon ${APP_VERSION}`;
+
+const LOGIN_HASH = "e32d1e62415b741653302e1c35bf365c82a131ac76ff4466fa41e1c044c801b5";
+const LOGIN_STORAGE_KEY = "homepage-login";
+const loginPanel = document.getElementById("login");
+const homepage = document.getElementById("homepage");
+const loginError = document.getElementById("login-error");
+let homepageLoaded = false;
+
+function showHomepage() {
+  loginPanel.hidden = true;
+  homepage.hidden = false;
+  if (!homepageLoaded) {
+    homepageLoaded = true;
+    homepage.querySelectorAll("[data-src]").forEach(element => {
+      element.src = element.dataset.src;
+      element.removeAttribute("data-src");
+    });
+    loadLinks();
+  }
+}
+
+document.getElementById("login-form").addEventListener("submit", async event => {
+  event.preventDefault();
+  const submit = document.getElementById("login-submit");
+  submit.disabled = true;
+  loginError.textContent = "";
+  try {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${username}\n${password}`));
+    const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, "0")).join("");
+    if (hash !== LOGIN_HASH) {
+      loginError.textContent = "Feil brukernavn eller passord.";
+      document.getElementById("password").focus();
+      return;
+    }
+    try {
+      localStorage.setItem(LOGIN_STORAGE_KEY, LOGIN_HASH);
+    } catch {
+      // Innlogging fungerer også når nettleseren blokkerer lagring.
+    }
+    document.getElementById("login-form").reset();
+    showHomepage();
+    document.getElementById("logout").focus();
+  } catch {
+    loginError.textContent = "Kunne ikke kontrollere innloggingen. Åpne siden via HTTPS eller localhost.";
+  } finally {
+    submit.disabled = false;
+  }
+});
+
+document.getElementById("logout").addEventListener("click", () => {
+  try {
+    localStorage.removeItem(LOGIN_STORAGE_KEY);
+  } catch {
+    // Vis login selv om lagring er blokkert.
+  }
+  homepage.hidden = true;
+  loginPanel.hidden = false;
+  loginError.textContent = "";
+  document.getElementById("username").focus();
+});
 
 function createLink(item) {
   const url = new URL(item.url, document.baseURI);
@@ -70,4 +132,8 @@ async function loadLinks() {
   }
 }
 
-loadLinks();
+try {
+  if (localStorage.getItem(LOGIN_STORAGE_KEY) === LOGIN_HASH) showHomepage();
+} catch {
+  // Behold login når nettleseren blokkerer lagring.
+}

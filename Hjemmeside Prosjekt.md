@@ -1,8 +1,8 @@
 # Hjemmeside – prosjektbeskrivelse og driftsgrunnlag
 
-Dokumentversjon: 1
+Dokumentversjon: 2
 
-Sist kontrollert mot lokal kode: 2026-11-08
+Sist kontrollert mot lokal kode: 2026-11-09
 
 ## Instruksjoner Codex ChatGPT skal følge
 
@@ -22,20 +22,28 @@ Sist kontrollert mot lokal kode: 2026-11-08
 
 ## Implementert løsning
 
-Appversjon: 1. Versjonen er definert som `APP_VERSION` i `site/app.js` og vises høyrejustert øverst på forsiden.
+Appversjon: 2. Versjonen er definert som `APP_VERSION` i `site/app.js` og vises høyrejustert øverst på forsiden etter innlogging.
 
 Nettsiden er en statisk HTML/CSS/JavaScript-side basert på `C:\Dropbox\startup\index.htm`. Originalfilene i Dropbox er ikke endret. Bakgrunn, bilder, seksjoner, linkrekkefølge og radinndeling er beholdt. Bilder og værgraf skaleres på smale skjermer.
 
 ## Filstruktur
 
-* `site/index.html`: sidestruktur, klokker, værgraf og tidslinje.
+* `site/index.html`: login, sidestruktur, klokker, værgraf og tidslinje.
 * `site/style.css`: utseende og tilpasning til smale skjermer.
-* `site/app.js`: appversjon og visning av linkene fra JSON. Linktekst settes som tekst, ikke HTML.
+* `site/app.js`: appversjon, login og visning av linkene fra JSON. Linktekst settes som tekst, ikke HTML.
 * `site/links.json`: seks seksjoner med 79 vanlige linker og tre heading-linker.
 * `site/images/`: de fire bildene nettsiden bruker, kopiert fra Dropbox.
 * `.github/workflows/pages.yml`: publisering til GitHub Pages fra `main`.
 
 ## Innhold og avgrensning
+
+### Login
+
+Forsiden er skjult til innloggingen er godkjent i JavaScript. Kun det avtalte brukernavnet og passordet godtas, med skille mellom store og små bokstaver og uten trimming av mellomrom. Koden inneholder SHA-256-hashen av brukernavn, linjeskift (LF) og passord, ikke verdiene i klartekst. Hashing bruker Web Crypto og krever HTTPS eller localhost.
+
+Vellykket innlogging huskes i `localStorage` under nøkkelen `homepage-login`, uten tidsutløp. Siden åpnes automatisk ved senere besøk i samme nettleserprofil på samme origin. "Logg ut" fjerner lagringen og viser login igjen i fanen. Sletting av nettleserdata fjerner også innloggingen; privat nettlesing beholder normalt bare lagringen mens den private økten varer. Dersom nettleseren blokkerer lagring, fungerer innlogging fortsatt i gjeldende sidevisning, men huskes ikke ved ny lasting.
+
+Linker, bilder i forsiden og eksterne widgets lastes først etter godkjent eller husket innlogging. Bakgrunnen er synlig også på login. Løsningen er en enkel sperre i nettleseren, ikke serverbasert tilgangskontroll. Den kan omgås med utviklerverktøy, og statiske filer, inkludert `links.json`, er fremdeles offentlig tilgjengelige via direkte URL. Hashen skjuler klartekstverdiene, men gjør ikke filene private.
 
 ICE bruker `https://minside.ice.no/`. Messenger, Feedly og MyHeritage beholder sine opprinnelige ID-er. "Privat" er en heading uten link. `privat.htm` og kommentert, inaktivt innhold fra originalen er ikke inkludert. Andre aktive linkadresser er beholdt, inkludert HTTP-adresser og lokal routeradresse.
 
@@ -66,4 +74,6 @@ python -m http.server 8080 --bind 127.0.0.1 --directory .\site
 Åpne `http://127.0.0.1:8080/`. Direkte åpning som `file://` støttes ikke fordi linkene lastes med `fetch`. Stopp serveren med Ctrl+C.
 
 JavaScript-syntaks, JSON, samsvar med originalens aktive linkadresser og lokale bildefiler er kontrollert. HTTP- og nettleserkontroll mot lokal webserver fikk timeout i kjøremiljøet; lokal servertilgang og visuell nettleserkontroll er derfor ikke bekreftet. Publisering på GitHub kan først kontrolleres etter brukerens synkronisering og aktivering av Pages. Tilgang og funksjon på eksterne målsider er ikke verifisert.
+
+For appversjon 2 er JavaScript-syntaks og diff-format kontrollert. Automatiske kontroller i Node med simulert DOM og lagring verifiserer riktig og feil innlogging, store/små bokstaver, ekstra mellomrom, husket innlogging, ugyldig lagringsverdi, logout, blokkert `localStorage` og utsatt ressurslasting. Visuell nettleserkontroll er ikke utført for denne versjonen.
 
