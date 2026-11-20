@@ -383,6 +383,21 @@
           }
         ]
       ]
+    },
+    {
+      "title": "GTA VI",
+      "rows": [
+        [
+          {
+            "text": "Kapittel 1",
+            "url": "https://www.ign.com/wikis/gta-6/Chapter_1"
+          },
+          {
+            "text": "Kapittel 2",
+            "url": "https://www.ign.com/wikis/gta-6/Chapter_2"
+          }
+        ]
+      ]
     }
   ]
 }
