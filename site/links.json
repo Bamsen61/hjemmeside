@@ -389,10 +389,11 @@
       "rows": [
         [
           {
-            "text": "Kapittel 1"
+            "text": "Kapittel:",
+            "url": "https://www.ign.com/wikis/gta-6/Chapter_1_Guide_and_Tips"
           },
           {
-            "text": "Kapittel 1",
+            "text": "1",
             "url": "https://www.ign.com/wikis/gta-6/Chapter_1_Guide_and_Tips"
           },
           {
@@ -418,9 +419,23 @@
         ],
         [
           {
-            "text": "Kart",
+            "text": "Kart:",
             "url": "https://www.ign.com/maps/gta-6/leonida"
           },
+          {
+            "text": "IGN",
+            "url": "https://www.ign.com/maps/gta-6/leonida"
+          },
+          {
+            "text": "Jeanropke",
+            "url": "https://jeanropke.github.io/GTAVIMap/"
+          },
+          {
+            "text": "gta6map",
+            "url": "https://gta6map.io/"
+          }
+        ],
+        [
           {
             "text": "ToDo",
             "url": "https://www.youtube.com/playlist?list=PLRALz2p6myQM"
